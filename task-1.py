@@ -24,5 +24,5 @@ for func in [min, max, sum]:
     program_list.append(Program(func, args=args))
 
 result_list = []
-superposition = Superposition(function=print, args=program_list)  # <- Create superposition.
+superposition = Superposition(function=print, args=program_list)
 superposition()
