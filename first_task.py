@@ -18,11 +18,12 @@ class Superposition(Program):
         self.function(*result_list)
 
 
-args = [5, 4, 3, 2, 1]
-program_list = []
-for func in [min, max, sum]:
-    program_list.append(Program(func, args=args))
+if __name__ == "__main__":
+    args = [5, 4, 3, 2, 1]
+    program_list = []
+    for func in [min, max, sum]:
+        program_list.append(Program(func, args=args))
 
-result_list = []
-superposition = Superposition(function=print, args=program_list)
-superposition()
+    result_list = []
+    superposition = Superposition(function=print, args=program_list)
+    superposition()
